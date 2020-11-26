@@ -1,0 +1,66 @@
+//body {
+//  padding-bottom: 20px;
+//}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: darkgoldenrod;
+}
+
+.navbar {
+  min-height: 5vh;
+  margin-bottom: 20px;
+  background-color:	#CFB53B !important;
+  font-weight: normal;
+  //border-radius: 0px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+#social {
+  min-height: 90px !important;
+  min-width: 120px !important;
+}
+
+.fa-facebook {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+  color: lightskyblue !important;
+}
+
+.fa-instagram {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+}
+
+.fa-youtube {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+  color: indianred !important;
+}

@@ -1,0 +1,17 @@
+KEYS;
+KEYS;Všeobecné;
+KEYS;Depilácia;
+KEYS;Mihalnice;
+Všeobecné;
+Farbenie obočia;2.50;
+Úprava obočia;2.50;
+Farbenie mihalníc;2.50;
+Depilácia;
+Hornej pery;2.00;
+Brady;3.00;
+Predlaktia;10.00;
+Celé ruky;13.00;
+Lýtka;od 10.00;
+Celé nohy;20.00;
+Bikiny;10.00;
+Chrbát;10.00;

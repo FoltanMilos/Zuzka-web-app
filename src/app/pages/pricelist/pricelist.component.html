@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <div class="row">
+    <div class="col-xs-12 text-center align-content-center p-md-1 pt-0">
+      <h2>Cenník služieb</h2>
+    </div>
+  </div>
+  <div class="align-content-center row">
+      <div class="col-xs-15 align-content-center pricelist-padding">
+        <a class="list-group-item clearfix p-1" *ngFor="let priceItem of this.listPrice">
+          <div class="d-inline-block pull-left p-0">
+            <h6 class="list-group-item-heading text-center text-dark">
+<!--              {{ priceItem!.name }}-->
+            PriceItemName
+            </h6>
+          </div>
+          <div class="d-inline-block pull-right p-0">
+            <h6 class="list-group-item-heading  text-center text-dark">
+<!--              {{priceItem!.value }}-->
+            PriceItemValue</h6>
+          </div>
+        </a>
+      <app-price-item></app-price-item>
+    </div>
+  </div>
+</body>

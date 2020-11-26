@@ -1,0 +1,83 @@
+.fa {
+  padding-top: 5px !important;
+  //padding-right: 10px !important;
+  font-size: 30px;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 99%;
+  color: darkgoldenrod !important;
+  background-color: darkgrey;
+  align-content: center;
+}
+
+.fa-facebook {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+  color: lightskyblue !important;
+}
+
+.fa-instagram {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+}
+
+.fa-youtube {
+  height: 40px !important;
+  align-self: center;
+  align-content: center;
+  color: indianred !important;
+}
+
+h3 {
+  //font-family: 'Courier New', monospace;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #434445;
+  font-weight: bold;
+}
+
+img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+#cntr {
+  align-content: inherit;
+}
+
+#main_container {
+  flex-wrap: nowrap;
+}
+
+#secondContainer {
+  flex-wrap: wrap;
+}
+
+.blocks {
+  min-height: 50px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  #main_container {
+    flex-wrap: wrap;
+  }
+  body {
+    height: auto;
+    //margin-bottom: px !important;
+    //height: 100%;
+  }
+}
+
+#socialContainer {
+  //flex-wrap: wrap !important;
+  //display: flex !important;
+}
+
