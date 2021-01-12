@@ -1,26 +1,28 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-  <div class="row">
-    <div class="col-xs-12 text-center align-content-center p-md-1 pt-0">
-      <h2>Cenník služieb</h2>
+<div class="d-block align-content-center container-fluid pt-2 pb-2 p-sm-1 px-1 p-lg-5">
+<!--  generated block of priceitems-->
+  <div class="container col-xs-12 col-lg-12 col-md-12"
+       *ngFor="let priceItem of this.listPrice">
+    <div class="col-xs-12 col-lg-12 col-md-12 container d-block"  *ngIf="(this.isChangerdCategory(priceItem.category))">
+      <a class="float-right align-middle justify-content-center h-auto col-xs-2 px-1 m-0" id="logoCat">
+        <mat-icon svgIcon="cosmetics" class="my-icon p-0 m-0 float-left align-self-center"></mat-icon>
+      </a>
+      <h4 class="col-xs-10 col-md-10 col-lg-10 text-center pt-1 mb-0 text-center">{{ priceItem.category }}</h4>
+    </div>
+    <div class="container col-xs-12 col-md-12 col-lg-12 p-1 d-inline-flex">
+      <a class="border col-sx-2 col-lg-2 col-md-2 logo-min-max text-decoration-none m-0 px-1
+      align-middle text-center justify-content-center">
+        <mat-icon svgIcon="skincare" class="my-icon p-0 m-0 float-left align-self-center text-center"></mat-icon>
+      </a>
+      <a class="border col-sx-6 col-lg-6 col-md-6 min-max-middle text-decoration-none" >{{ priceItem.name }}</a>
+      <a class="border col-sx-4 col-lg-4 col-md-4 min-max-width text-decoration-none">{{ priceItem.value }}</a>
     </div>
   </div>
-  <div class="align-content-center row">
-      <div class="col-xs-15 align-content-center pricelist-padding">
-        <a class="list-group-item clearfix p-1" *ngFor="let priceItem of this.listPrice">
-          <div class="d-inline-block pull-left p-0">
-            <h6 class="list-group-item-heading text-center text-dark">
-<!--              {{ priceItem!.name }}-->
-            PriceItemName
-            </h6>
-          </div>
-          <div class="d-inline-block pull-right p-0">
-            <h6 class="list-group-item-heading  text-center text-dark">
-<!--              {{priceItem!.value }}-->
-            PriceItemValue</h6>
-          </div>
-        </a>
-      <app-price-item></app-price-item>
-    </div>
-  </div>
+</div>
+<!--ceny aktualne od -->
+<div class="col-xs-12 col-lg-12 col-md-12 text-center font-italic text-muted pb-2">
+  ** Ceny sú aktuálne od 1.12.2020
+</div>
 </body>
+

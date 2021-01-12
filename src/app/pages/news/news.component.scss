@@ -1,0 +1,31 @@
+body {
+  background-color:	#dbdbdb !important;
+}
+
+.img {
+  border-radius: 40px 40px 40px 40px !important;
+}
+
+//.img:hover {
+//  opacity: 10% !important;
+
+
+.absolute-button {
+  position: relative;
+  top: -214.375px;
+  //height: 428.75px;
+  opacity: 0% !important;
+}
+
+.absolute-button:hover {
+  background-color: black !important;
+}
+
+.button-bottom {
+  border-radius: 0px 0px 40px 40px !important;
+  border: none;
+
+  a {
+    vertical-align: middle !important;
+  }
+}

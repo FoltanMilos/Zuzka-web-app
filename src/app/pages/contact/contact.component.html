@@ -1,15 +1,16 @@
 <body>
 <div class="d-flex justify-content-around align-content-center align-items-stretch
-text-center w-100 h-100 container" id="main_container">
+text-center w-100 h-100 container mb-4" id="main_container">
   <div class="container row align-content-center d-block w-100 float-left
   col-sx-6 col-sm-8 col-lg-6">
-    <h3 class="text-center align-content-center border-bottom">Kde nás nájdete</h3>
+    <h4 class="col-xs-10 text-center pt-1 mb-0 mr-0 text-center border-bottom pt-2">Kde nás nájdete</h4>
+<!--    <h3 class="text-center align-content-center border-bottom">Kde nás nájdete</h3>-->
     <p class="text-center align-content-center">
      Salón je umiestnený v obytnom dome Arboreum na sídlisku Vlčince. Aby ste sa k nám dostali,
       musíte obísť budovu, tam nájdete vchod do salónu.
     </p>
-    <img src="assets/images/Mapa.png" class="img-responsive row align-content-center text-center">
-    <a type="button" class="btn btn-primary" href="https://www.google.sk/maps/dir//49.2144898,18.7665429/@49.2144636,18.7659555,19z/data=!4m2!4m1!3e0">
+    <img src="assets/images/Mapa.png" class="img-fluid align-content-center text-center mr-0">
+    <a type="button" class="btn btn-primary my-button mt-1 mb-2 col-sx-12" href="https://www.google.sk/maps/dir//49.2144898,18.7665429/@49.2144636,18.7659555,19z/data=!4m2!4m1!3e0">
       Zobraziť na mape
     </a>
   </div>
@@ -17,7 +18,7 @@ text-center w-100 h-100 container" id="main_container">
   <div class="d-table-row container d-inline-flex align-items-stretch justify-content-around"
   id="secondContainer">
   <div class="row w-100 float-right col-sx-8 col-sm-8 col-lg-8">
-    <h3 class="text-center align-content-center w-100 border-bottom" id="cntr">Sociálne médiá</h3>
+    <h4 class="text-center align-content-center w-100 border-bottom pt-2" id="cntr">Sociálne médiá</h4>
 <!--    <div class="row text-center align-content-center w-100">-->
       <div class="row align-content-center d-flex blocks justify-content-center" id="social">
         <a class="fa fa-facebook" href="https://www.facebook.com/AllegriaSalon/?ref=page_internal"></a>
@@ -27,7 +28,7 @@ text-center w-100 h-100 container" id="main_container">
     </div>
   </div>
   <div class="row w-100  float-right col-lg-8">
-    <h3 class="text-center align-content-center w-100 border-bottom">Ak prídete autom</h3>
+    <h4 class="text-center align-content-center w-100 border-bottom pt-2">Ak prídete autom</h4>
     <p class="text-center align-content-center">
       Vs simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
       text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -37,13 +38,14 @@ text-center w-100 h-100 container" id="main_container">
   </div>
 
   <div class="row w-100  float-right col-lg-8">
-    <h3 class="text-center align-content-center w-100 border-bottom">
+    <h4 class="text-center align-content-center w-100 border-bottom pt-2">
       Kontakt
-    </h3>
+    </h4>
     <div class="container d-block justify-content-center align-content-center" id="socialContainer">
       <div class="row container d-flex pl-5">
         <div class="text-center">
-          <a class="p-2 fa fa-facebook"></a>
+<!--          <a class="p-2 fa fa-facebook"></a>-->
+          <mat-icon svgIcon="telephone" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
           <a>0948 612 433</a>
@@ -51,7 +53,7 @@ text-center w-100 h-100 container" id="main_container">
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook"></a>
+          <mat-icon svgIcon="telephone" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
           <a>0948 612 433</a>
@@ -59,7 +61,7 @@ text-center w-100 h-100 container" id="main_container">
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook"></a>
+          <mat-icon svgIcon="email" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
           <a>foltan.milosml@gmail.com</a>
@@ -69,73 +71,72 @@ text-center w-100 h-100 container" id="main_container">
   </div>
 
   <div class="row float-right w-100 col-lg-8">
-    <h3 class="text-center align-content-center w-100 border-bottom">Otváracie hodiny</h3>
+    <h4 class="text-center align-content-center w-100 border-bottom pt-2">Otváracie hodiny</h4>
     <div class="container row w-100 d-block justify-content-center align-content-center pl-4">
       <div class="row container d-flex pl-5">
-        <div class="">
-          <a class="p-2 fa fa-facebook"></a>
+        <div class="col-xs-4">
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
-        <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
-        </div>
-      </div>
-      <div class="row container d-flex pl-5">
-        <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
-        </div>
-        <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+        <div class="ml-1 mt-2 mb-1 col-xs-8">
+          <a>PO 8:00 - 16:00</a>
         </div>
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+          <a>UT 8:00 - 16:00</a>
         </div>
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+          <a>ST 8:00 - 16:00</a>
         </div>
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+          <a>ŠT 8:00 - 16:00</a>
         </div>
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+          <a>PI  8:00 - 16:00</a>
         </div>
       </div>
       <div class="row container d-flex pl-5">
         <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
+          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>
         </div>
         <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
+          <a>SO 8:00 - 16:00</a>
         </div>
       </div>
-      <div class="row container d-flex pl-5">
-        <div class="">
-          <a class="p-2 fa fa-facebook invisible"></a>
-        </div>
-        <div class="ml-1 mt-2 mb-1">
-          <a>Po - 8:00 - 16:00</a>
-        </div>
-      </div>
-
+<!--      <div class="row container d-flex pl-5">-->
+<!--        <div class="">-->
+<!--          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>-->
+<!--        </div>-->
+<!--        <div class="ml-1 mt-2 mb-1">-->
+<!--          <a>Po - 8:00 - 16:00</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="row container d-flex pl-5">-->
+<!--        <div class="">-->
+<!--          <mat-icon svgIcon="back-in-time" class="my-icon"></mat-icon>-->
+<!--        </div>-->
+<!--        <div class="ml-1 mt-2 mb-1">-->
+<!--          <a>Po - 8:00 - 16:00</a>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </div>

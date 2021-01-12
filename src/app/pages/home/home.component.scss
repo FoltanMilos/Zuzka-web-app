@@ -1,6 +1,39 @@
 body {
-  background-image: url(C:\WEBY\zuzka-web-app\src\assets\icons\download.jpg);
+  //background-image: url('/assets/images/tittle3.jpg');
+  background-color: #d5e6db !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 226px 223px;
+  background-size: 375px 375px;
+  //width: 100% !important;
+  //height: 100% !important;
 }
+#PageCover {
+
+}
+//
+//.article-odd {
+//  background-color: var(--article-bg-2) !important;
+//  border-radius: 10px 10px 10px 0px;
+//
+//  a {
+//    opacity: 100% !important;
+//  }
+//}
+
+ul li{
+  display: inline;
+  list-style: circle;
+}
+
+.iconNavigation {
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.my-image {
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+
+

@@ -1,9 +1,55 @@
-.row {
-  display: block !important;
-}
-
 .pricelist-padding {
   padding-left: 10rem !important;
   padding-right: 10rem !important;
 }
 
+div div a {
+  border-radius: 5px;
+  color: black;
+}
+.my-icon{
+  color: var(--goldText);
+  align-self: center;
+  align-content: center;
+}
+.logo-min-max {
+  min-width: 10% !important;
+  max-width: 10% !important;
+}
+
+.min-max-width {
+  min-width: 34% !important;
+  max-width: 34% !important;
+}
+
+.min-max-middle {
+  min-width: 56% !important;
+  max-width: 56% !important;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-style: italic;
+  color: var(--goldHeaders);
+}
+.bordered {
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: groove;
+  border-color: coral;
+}
+#logoCat {
+  background-color: #fcf1c5;
+}
+
+div div div a {
+  background-color: #fcfaf2;
+  //background-color: #f7f1e1;
+}
+
+@media (min-width: 1000px) {
+  div div a {
+    font-size: 1.6rem !important;
+  }
+}

@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, DomSanitizer} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,10 @@ import { NewsComponent } from './pages/news/news.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PriceItemComponent } from './pages/pricelist/price-item/price-item.component';
 import { ProductlistComponent } from './pages/productlist/productlist.component';
+import {MatIconModule} from '@angular/material/icon';
+import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
+import { ServicesComponent } from './pages/services/services.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +33,17 @@ import { ProductlistComponent } from './pages/productlist/productlist.component'
     CalendarComponent,
     NewsComponent,
     PriceItemComponent,
-    ProductlistComponent
+    ProductlistComponent,
+    ServicesComponent,
+    AboutUsComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        MatIconModule,
+        NgbCollapseModule
+    ],
   providers: [],
   bootstrap: [AppComponent, MenuComponent
   ]

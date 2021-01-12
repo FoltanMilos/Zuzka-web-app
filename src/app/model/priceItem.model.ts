@@ -5,7 +5,7 @@ export class PriceItem {
 
   constructor(name: string, value: string, category: string) {
     this.name = name;
-    this.value = value === ' ' ? value : value + ' €';
+    this.value = value === ' ' ? value : value + '€';
     this.category = category;
   }
 }

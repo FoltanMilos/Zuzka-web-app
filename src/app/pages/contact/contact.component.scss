@@ -32,15 +32,16 @@
   color: indianred !important;
 }
 
-h3 {
+h4 {
   //font-family: 'Courier New', monospace;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 17px;
-  line-height: 1.5;
-  color: #434445;
-  font-weight: bold;
+  //letter-spacing: 0.06em;
+  //font-size: 17px;
+  //line-height: 1.5;
+  color: var(--goldHeaders);
+  //font-weight: bold;
+  font-style: italic;
 }
 
 img {
@@ -81,3 +82,11 @@ img {
   //display: flex !important;
 }
 
+.my-icon {
+  color: var(--goldHeaders);
+}
+
+body {
+  height: 100% !important;
+  width: 100% !important;
+}
