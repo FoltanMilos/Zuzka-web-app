@@ -19,6 +19,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './pages/services/services.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { MenuBottomComponent } from './menu-bottom/menu-bottom.component';
+import { CovidComponent } from './pages/covid/covid.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
     PriceItemComponent,
     ProductlistComponent,
     ServicesComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    MenuBottomComponent,
+    CovidComponent,
+    LogoComponent
   ],
     imports: [
         BrowserModule,

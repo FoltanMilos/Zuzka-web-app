@@ -27,5 +27,16 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon('email', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/email.svg'));
     this.matIconRegistry.addSvgIcon('back-in-time', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/back-in-time.svg'));
     this.matIconRegistry.addSvgIcon('arrow-right', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/arrow_right.svg'));
+    // menu bottom
+    this.matIconRegistry.addSvgIcon('x', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/X.svg'));
+    this.matIconRegistry.addSvgIcon('place', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/place.svg'));
+    this.matIconRegistry.addSvgIcon('users', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/users.svg'));
+    this.matIconRegistry.addSvgIcon('picture', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/picture.svg'));
+    this.matIconRegistry.addSvgIcon('multiply', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/multiply.svg'));
+    this.matIconRegistry.addSvgIcon('newspaper', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/newspaper.svg'));
+    this.matIconRegistry.addSvgIcon('diploma', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/diploma.svg'));
+    this.matIconRegistry.addSvgIcon('hand-shake', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/hand-shake.svg'));
+    this.matIconRegistry.addSvgIcon('euro', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/euro.svg'));
+    this.matIconRegistry.addSvgIcon('cosmeticsBlack', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/cosmeticsBlack.svg'));
   }
 }

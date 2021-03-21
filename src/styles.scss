@@ -25,6 +25,7 @@ body {
 
 * {
   font-family: 'Oswald', sans-serif;
+  font-family: "Gill Sans", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -46,9 +47,6 @@ body {
 }
 
 .my-button {
-  //background: -webkit-linear-gradient(0deg, transparent 50%,#27e8a7 50%);
-  //background-size: 100%;
-  //background-color: var(--article-bg) !important;
   background-color: #579168 !important;
   border-color: #579168!important;
   color: var(--goldHeaders) !important;
@@ -64,13 +62,9 @@ body {
   }
 }
 
-//}
-
 .article-item {
   border-radius: 45px 45px 40px 40px !important;
   background-color: white !important;
-  box-shadow: 0px 0px 11px #000000 !important;
+  box-shadow: 0px 0px 8px #f2d8a2 !important;
 }
-
-
 

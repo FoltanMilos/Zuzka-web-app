@@ -1,9 +1,12 @@
 body {
-  background-color:	#dbdbdb !important;
+  background-color: whitesmoke !important;
+  justify-content: center !important;
 }
 
 .img {
-  border-radius: 40px 40px 40px 40px !important;
+  border-radius: 40px 40px 40px 0px !important;
+  //max-width: 300px !important;
+  //max-height: 300px !important;
 }
 
 //.img:hover {
@@ -28,4 +31,22 @@ body {
   a {
     vertical-align: middle !important;
   }
+}
+
+#main-container {
+  align-content: center !important;
+  justify-self: center !important;
+  max-width: 1000px !important;
+  background-color: white !important;
+}
+
+.txt {
+  text-align: left !important;
+}
+
+h2 {
+  color:  #c9a459 !important;
+}
+h5 {
+  color: #c9a459 !important; ;
 }

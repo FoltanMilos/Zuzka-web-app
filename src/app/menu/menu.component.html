@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light bordered container p-0 m-0
- col-12 w-100 " >
+<nav class="navbar navbar-expand-lg navbar-light bg-light bordered container d-inline-flex p-0 m-0
+ col-12 justify-content-center" >
   <div class="container d-flex">
-      <button class="navbar-toggler col-xs-12 w-100 buttonBorder" type="button" data-toggle="collapse"
+      <button class="navbar-toggler buttonBorder" type="button" data-toggle="collapse"
               data-target="#navbarsExample10" aria-controls="#navbarsExample10" aria-expanded="false"
               aria-label="Toggle navigation" (click)="collapse()">
         <span class="navbar-toggler-icon"></span>
@@ -11,38 +11,45 @@
   <!--logo PART-->
 <!--    <img src="../../assets/logos/Logo.png" class="logoImg img-fluid col-1">-->
 
-
-  <div class="collapse navbar-collapse justify-content-center w-100 col-12" id="navbarsExample10" >
-    <ul class="navbar-nav col-12 justify-content-center  w-100 col-12">
-      <li class="nav-item justify-content-center">
+<!--  <div class="col-2 border-out">-->
+<!--    <a></a>-->
+<!--  </div>-->
+  <div class="collapse navbar-collapse zlom justify-content-center col-8 p-0 m-0" id="navbarsExample10" >
+    <ul class="navbar-nav zlom justify-content-center col-12 pl-0">
+      <li class="nav-item justify-content-center ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Úvod')"  routerLink="/">Úvod</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item  ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('O nás')"  routerLink="/about-us">O nás</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item  ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Služby')"   routerLink="/services">Služby</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Cenník')"   routerLink="/pricelist">Cenník</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Naša práca')"   routerLink="/work">Naša práca</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ml-2 mr-2">
         <a class="nav-link text-center" data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Novinky')"   routerLink="/news">Novinky</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Partneri')"   routerLink="/news">Partneri</a>
       </li>
-      <li class="nav-item text-center">
+      <li class="nav-item text-center ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Termíny')"   routerLink="/calendar">Termíny</a>
       </li>
-      <li class="nav-item text-center ">
+      <li class="nav-item text-center ml-2 mr-2">
         <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Kontakt')" routerLink="/contact">Kontakt</a>
       </li>
     </ul>
   </div>
+
+<!--  <div class="col-2 border-out">-->
+<!--    <a></a>-->
+<!--  </div>-->
+
   <div class="nav-item text-center p-0 m-0 col-xs-12 w-100" id="secondHiddenElement">
     <a class="nav-link text-center" id="currentSelectedTab"> {{ this.currentSelectedItem }}
     </a>
