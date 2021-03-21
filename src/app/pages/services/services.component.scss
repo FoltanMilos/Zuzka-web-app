@@ -1,0 +1,39 @@
+body {
+  height: auto;
+  //background-color: var(--lightBg) !important;
+
+}
+.bordered {
+  border-radius: 1%;
+}
+
+.item {
+  background-color: var(--lightBg);
+}
+
+.my-container {
+  background-color: whitesmoke !important;
+}
+.img {
+  border-radius: 40px 40px 40px 0px;
+}
+
+
+// And from the left
+.my-button:hover,
+.my-button:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.img-sized {
+  max-height: 50% !important;
+}
+.text-center {
+  text-align: center !important;
+}
+#header-of-page {
+  background-color: var(--lightBg) !important;
+  a {
+    background-color: var(--lightBg) !important;
+  }
+}

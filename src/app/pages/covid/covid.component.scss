@@ -1,0 +1,21 @@
+div {
+  background-color: #FFDDDD !important;
+  //border-style: inset;
+  border-color: #FFDDDD;
+  //border-top-color: orangered;
+  //border-left-color: orangered;
+}
+
+#prechod {
+
+}
+
+a {
+  font-size: 0.8rem !important;
+}
+
+@media (min-width: 1000px) {
+  div {
+    flex-wrap: nowrap !important;
+  }
+}

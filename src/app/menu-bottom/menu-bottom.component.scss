@@ -1,0 +1,33 @@
+#my-bottom-navbar {
+  background-color: #231f20 !important;
+  min-height: 50px !important;
+  max-height: 50px !important;
+}
+
+//BUTTON
+#my-middle-button {
+  height: 70px !important;
+  width: 100% !important;
+  background-color: #231f20 !important;
+  //color: #f5c6cb !important;
+  border-radius: 45% 45% 45% 45% !important;
+}
+
+#my-middle-icon {
+  height: 70px !important;
+  vertical-align: top !important;
+}
+
+div div {
+  vertical-align: center !important;
+}
+
+mat-icon {
+  color: #f5c6cb !important;
+  height: 100% !important;
+}
+
+svg {
+  height: 150px !important;
+  fill: #f5c6cb !important;
+}
