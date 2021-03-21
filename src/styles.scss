@@ -6,10 +6,9 @@ body {
   height: auto;
 }
 :root {
-  //--goldMenu: #F0D7A4;
-  --goldMenu: #1b662f;
-  //--goldHeaders: #A3684D;
-  --goldHeaders: #333d36;
+  --goldMenu: #F0D7A4;
+  --goldSelectedButtonBorder: #e9cc70;
+  --goldHeaders: #a3684d;
   --goldText: #A3684D;
   --goldBg-1: #DAEAD9;
   --goldBg-2: #E4F3E7;
@@ -17,10 +16,13 @@ body {
   --article-bg: #EEE2DC;
   --article-bg-2: #faf1ed;
   //--lightGoldBg:  #fcf8e6;
-  //--lightGoldBg:  #fcf6d9;
-  --lightGoldBg:  #579168;
-  --lightGoldBgInside:  #81b58f;
+  --lightGoldBg:  #fcf6d9;
+  //--lightGoldBg:  #579168;
+  --lightGoldBgInside:  #fcf6d9;
   --lightBg:  #f7f5e9;
+
+  --goldBorder:  #EDC7B7;
+  --goldBorderOnClick:  #EDC7B7;
 }
 
 * {
@@ -47,8 +49,8 @@ body {
 }
 
 .my-button {
-  background-color: #579168 !important;
-  border-color: #579168!important;
+  background-color: var(--goldBg-1) !important;
+  //border-color: #579168!important;
   color: var(--goldHeaders) !important;
   //transition: 0.8s;
 }

@@ -1,11 +1,10 @@
 <!--<app-covid></app-covid>-->
 <app-logo></app-logo>
 <app-menu></app-menu>
-<app-covid></app-covid>
+<ng-template [ngIf]="!(router.url === '/eshop')">
+  <app-covid></app-covid>
+</ng-template>
+
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>
-
-<!--<app-menu-bottom></app-menu-bottom>-->
-
-

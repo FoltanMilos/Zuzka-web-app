@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
 
   constructor(
     private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer
+    private domSanitizer: DomSanitizer,
+    public router: Router
     ) {
     this.matIconRegistry.addSvgIcon(
       'vseobecne', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/highlighter-solid.svg')

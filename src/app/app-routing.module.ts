@@ -8,6 +8,7 @@ import {CalendarComponent} from './pages/calendar/calendar.component';
 import {NewsComponent} from './pages/news/news.component';
 import {ServicesComponent} from './pages/services/services.component';
 import {AboutUsComponent} from './pages/about-us/about-us.component';
+import {EshopComponent} from "./pages/eshop/eshop.component";
 
 const routes: Routes = [
   // { path: '',
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'pricelist', component: PricelistComponent},
   { path: 'calendar', component: CalendarComponent},
   { path: 'news', component: NewsComponent},
-  { path: 'about-us', component: AboutUsComponent}
+  { path: 'about-us', component: AboutUsComponent},
+  { path: 'eshop', component: EshopComponent}
 ];
 
 @NgModule({

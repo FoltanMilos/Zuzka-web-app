@@ -22,6 +22,12 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { MenuBottomComponent } from './menu-bottom/menu-bottom.component';
 import { CovidComponent } from './pages/covid/covid.component';
 import { LogoComponent } from './logo/logo.component';
+import { EshopComponent } from './pages/eshop/eshop.component';
+import { ItemComponent } from './pages/eshop/item/item.component';
+import { BasketComponent } from './pages/eshop/basket/basket.component';
+import { OrderManagementComponent } from './pages/eshop/order-management/order-management.component';
+import { ListItemComponent } from './pages/eshop/list-item/list-item.component';
+import { ItemInfoComponent } from './pages/eshop/item-info/item-info.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +47,13 @@ import { LogoComponent } from './logo/logo.component';
     AboutUsComponent,
     MenuBottomComponent,
     CovidComponent,
-    LogoComponent
+    LogoComponent,
+    EshopComponent,
+    ItemComponent,
+    BasketComponent,
+    OrderManagementComponent,
+    ListItemComponent,
+    ItemInfoComponent
   ],
     imports: [
         BrowserModule,
