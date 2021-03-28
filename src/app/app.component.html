@@ -1,7 +1,7 @@
 <!--<app-covid></app-covid>-->
 <app-logo></app-logo>
 <app-menu></app-menu>
-<ng-template [ngIf]="!(router.url === '/eshop')">
+<ng-template [ngIf]="!(router.url === '/eshop' || router.url === '/basket')">
   <app-covid></app-covid>
 </ng-template>
 

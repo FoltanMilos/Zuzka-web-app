@@ -1,1 +1,58 @@
-<p>basket works!</p>
+<body>
+<!--Posun v ramci objednavky-->
+  <div class="container-fluid d-inline-flex col-12 mt-3 mb-3">
+    <div class="border small-navigation" (click)="this.setLever(1)">Kosik</div>
+    <div class="border small-navigation" (click)="this.setLever(2)">Platba a kupony</div>
+    <div class="border small-navigation" (click)="this.setLever(3)">Dodacie udaje</div>
+    <div class="border small-navigation" (click)="this.setLever(4)">Suhrn</div>
+  </div>
+
+<!--items-->
+  <div *ngIf="(this.level === 1)">
+    <div class="container-fluid mb-5 mt-2 d-flex flex-wrap col-12">
+      <div class="col-12">
+        <app-basket-item *ngFor="let basketItemFrom of listBasketItems"
+                         [basketItem]="basketItemFrom">
+        </app-basket-item>
+      </div>
+    </div>
+
+    <!--cast na platenie-->
+    <div class="col-12 container d-flex flex-wrap mb-2">
+      <div class="col-12 container d-flex">
+        <div class="col-8">Celkom bez dph</div>
+        <div class="col-4">16.00 e</div>
+      </div>
+      <div class="col-12 container d-flex">
+        <div class="col-8 font-weight-bold">Celkom</div>
+        <div class="col-4 font-weight-bold">20.00 e</div>
+      </div>
+    </div>
+
+    <app-basket-pay-bottom></app-basket-pay-bottom>
+  </div>
+
+
+<!--  Delivery a platba-->
+  <div *ngIf="(this.level === 2)">
+    <app-basket-delivery></app-basket-delivery>
+    <app-basket-pay-bottom></app-basket-pay-bottom>
+  </div>
+
+
+<!--  dodacie informacier-->
+  <div *ngIf="(this.level === 3)">
+    <app-basket-personal-info></app-basket-personal-info>
+    <app-basket-pay-bottom></app-basket-pay-bottom>
+  </div>
+
+<!--  finalizacia -->
+<div *ngIf="(this.level === 4)">
+  <app-basket-finalise-order></app-basket-finalise-order>
+  <app-basket-pay-bottom></app-basket-pay-bottom>
+</div>
+
+
+
+
+</body>

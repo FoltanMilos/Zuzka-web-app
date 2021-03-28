@@ -1,4 +1,17 @@
 <body class="w-100 h-100">
-<!--  <h4 class="text-center mt-2">Eshop</h4>-->
-  <app-list-item></app-list-item>
+
+  <div class="container p-2 d-flex col-12 w-100">
+    <div class="col-6">
+      <a>Smsadmsamdsadmsad</a>
+    </div>
+    <div class="col-6">
+        <button routerLink="/basket" class="float-right" >0.00 € Basket</button>
+    </div>
+  </div>
+
+<!--  shopping list-->
+  <app-list-item [listShopItems]=" listSaleItems" *ngIf="(router.url === '/eshop')"></app-list-item>
+
+<!--basket-->
+  <app-basket [listBasketItems]="listBasketItems" *ngIf="(router.url === '/basket')"></app-basket>
 </body>

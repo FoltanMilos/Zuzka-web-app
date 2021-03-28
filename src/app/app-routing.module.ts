@@ -8,7 +8,9 @@ import {CalendarComponent} from './pages/calendar/calendar.component';
 import {NewsComponent} from './pages/news/news.component';
 import {ServicesComponent} from './pages/services/services.component';
 import {AboutUsComponent} from './pages/about-us/about-us.component';
-import {EshopComponent} from "./pages/eshop/eshop.component";
+import {EshopComponent} from './pages/eshop/eshop.component';
+import {BasketComponent} from './pages/eshop/basket/basket.component';
+import {BasketDeliveryComponent} from './pages/eshop/basket/basket-delivery/basket-delivery.component';
 
 const routes: Routes = [
   // { path: '',
@@ -23,7 +25,9 @@ const routes: Routes = [
   { path: 'calendar', component: CalendarComponent},
   { path: 'news', component: NewsComponent},
   { path: 'about-us', component: AboutUsComponent},
-  { path: 'eshop', component: EshopComponent}
+  { path: 'eshop', component: EshopComponent},
+  { path: 'basket', component: BasketComponent},
+  { path: 'basket-delivery', component: BasketDeliveryComponent}
 ];
 
 @NgModule({

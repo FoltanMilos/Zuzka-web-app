@@ -23,6 +23,11 @@ body {
 
   --goldBorder:  #EDC7B7;
   --goldBorderOnClick:  #EDC7B7;
+
+  //basker
+  --greyLightBasketItem: #F4F5F5;
+  --greyDarkerBasketBuy: #666565;
+  --greenButtonBasket: #0a8c0a;
 }
 
 * {
@@ -70,3 +75,7 @@ body {
   box-shadow: 0px 0px 8px #f2d8a2 !important;
 }
 
+h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}

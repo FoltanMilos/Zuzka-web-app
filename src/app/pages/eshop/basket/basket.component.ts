@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {BasketItem} from '../../../model/basketItem.model';
+import {EshopService} from '../eshop.service';
 
 @Component({
   selector: 'app-basket',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basket.component.scss']
 })
 export class BasketComponent implements OnInit {
+  @Input() listBasketItems: Array<BasketItem> = [];
+  level = 4;
 
-  constructor() { }
+  constructor(private eshopService: EshopService) {
+  }
 
   ngOnInit(): void {
+    this.listBasketItems = this.eshopService.listBasketItems;
+  }
+
+  setLever(parameter: number): void {
+    this.level = parameter;
   }
 
 }

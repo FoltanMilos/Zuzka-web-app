@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {Router} from '@angular/router';
+import {EshopService} from './pages/eshop/eshop.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  providers: [EshopService]
 })
 export class AppComponent {
   title = 'zuzka-web-app';
@@ -14,7 +16,8 @@ export class AppComponent {
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
-    public router: Router
+    public router: Router,
+    public eshopService: EshopService
     ) {
     this.matIconRegistry.addSvgIcon(
       'vseobecne', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/highlighter-solid.svg')
@@ -40,5 +43,8 @@ export class AppComponent {
     this.matIconRegistry.addSvgIcon('hand-shake', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/hand-shake.svg'));
     this.matIconRegistry.addSvgIcon('euro', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/euro.svg'));
     this.matIconRegistry.addSvgIcon('cosmeticsBlack', this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/cosmeticsBlack.svg'));
+    // eshop
+
+
   }
 }

@@ -25,9 +25,18 @@ import { LogoComponent } from './logo/logo.component';
 import { EshopComponent } from './pages/eshop/eshop.component';
 import { ItemComponent } from './pages/eshop/item/item.component';
 import { BasketComponent } from './pages/eshop/basket/basket.component';
-import { OrderManagementComponent } from './pages/eshop/order-management/order-management.component';
 import { ListItemComponent } from './pages/eshop/list-item/list-item.component';
 import { ItemInfoComponent } from './pages/eshop/item-info/item-info.component';
+import { BasketItemComponent } from './pages/eshop/basket/basket-item/basket-item.component';
+import {EshopService} from './pages/eshop/eshop.service';
+import { BasketPayBottomComponent } from './pages/eshop/basket/basket-pay-bottom/basket-pay-bottom.component';
+import { BasketDeliveryComponent } from './pages/eshop/basket/basket-delivery/basket-delivery.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {FormsModule} from "@angular/forms";
+import { BasketPersonalInfoComponent } from './pages/eshop/basket/basket-personal-info/basket-personal-info.component';
+import { BasketFinaliseOrderComponent } from './pages/eshop/basket/basket-finalise-order/basket-finalise-order.component';
+import { BasketItemSmallInfoComponent } from './pages/eshop/basket/basket-item/basket-item-small-info/basket-item-small-info.component';
 
 @NgModule({
   declarations: [
@@ -51,18 +60,26 @@ import { ItemInfoComponent } from './pages/eshop/item-info/item-info.component';
     EshopComponent,
     ItemComponent,
     BasketComponent,
-    OrderManagementComponent,
     ListItemComponent,
-    ItemInfoComponent
+    ItemInfoComponent,
+    BasketItemComponent,
+    BasketPayBottomComponent,
+    BasketDeliveryComponent,
+    BasketPersonalInfoComponent,
+    BasketFinaliseOrderComponent,
+    BasketItemSmallInfoComponent
   ],
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        MatIconModule,
-        NgbCollapseModule
-    ],
-  providers: [],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    MatIconModule,
+    NgbCollapseModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    FormsModule
+  ],
+  providers: [EshopService],
   bootstrap: [AppComponent, MenuComponent
   ]
 })
