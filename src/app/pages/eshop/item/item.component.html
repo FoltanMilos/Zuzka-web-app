@@ -1,6 +1,6 @@
-<div class="container d-flex flex-wrap item float-left p-1 m-1 w-100 border">
+<div class="container d-flex flex-wrap item float-left p-2 m-1 w-100 box-sh card">
   <div class="col-12 w-100">
-    <img src="assets/eshop/kozmetika.jfif" class="img-fluid img-item center">
+    <img src="../../../../assets/eshop/kozmetika.jfif" class="img-fluid img-item center">
   </div>
   <div class="col-12">
     <h6 class="text-center">{{ insideShop.name }}</h6>
@@ -8,7 +8,9 @@
       Jemné čistiace mlieko pre normálnu a suchú pleť
     </div>
     <h6 class="text-center">20.00 Eur</h6>
-    <button (click)="addItemToBasket(insideShop)" >Pridat do kosika</button>
+  </div>
+  <div class="col-12 p-0 m-0">
+    <button class="button-shop-list col-12 myButton p-1" (click)="addItemToBasket(insideShop)" >Pridať do košíka</button>
   </div>
 </div>
 

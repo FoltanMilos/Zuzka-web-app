@@ -9,7 +9,7 @@ import {EshopService} from '../eshop.service';
 })
 export class BasketComponent implements OnInit {
   @Input() listBasketItems: Array<BasketItem> = [];
-  level = 4;
+  level = 1;
 
   constructor(private eshopService: EshopService) {
   }

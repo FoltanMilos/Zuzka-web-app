@@ -5,8 +5,8 @@ export class Item {
   public price: number | undefined;
   public imgPath: string | undefined;
 
-  constructor(name: string, description: string, price: number, imgPath: string) {
-    this.id = 1;  // from DB unique
+  constructor(id: number, name: string, description: string, price: number, imgPath: string) {
+    this.id = id;
     this.name = name;
     this.price = price;
     this.description = description;

@@ -7,15 +7,25 @@ import {Subject} from 'rxjs';
 export class EshopService {
 
   listSaleItems: Array<Item> = [
-    new Item('Milky Cleanser', 'Jemne cistiace mlieko pre normalnu a suchu plet',
+    new Item(1, 'Milky Cleanser', 'Jemne cistiace mlieko pre normalnu a suchu plet',
       10.00, '/assets/eshop/kozmetika.jfif'),
-    new Item('Medium Cleanser', 'Medium cistiace mlieko pre normalnu a suchu plet',
+    new Item(2, 'Medium Cleanser', 'Medium cistiace mlieko pre normalnu a suchu plet',
       15.00, '/assets/eshop/kozmetika.jfif'),
-    new Item('Hard Cleanser', 'Hard cistiace mlieko pre normalnu a suchu plet',
+    new Item(3, 'Hard Cleanser', 'Hard cistiace mlieko pre normalnu a suchu plet',
       20.00, '/assets/eshop/kozmetika.jfif'),
   ];
-  listBasketItems: Array<BasketItem> = [new BasketItem(new Item('TRest', 'Jemne cistiace mlieko pre normalnu a suchu plet',
-    10.00, '/assets/eshop/kozmetika.jfif'), 1, 'streda:2021')];
+  listSaleItems2: Array<Item> = [
+    new Item(4, 'Hard Cleanser', 'Jemne cistiace mlieko pre normalnu a suchu plet',
+      10.00, '/assets/eshop/kozmetika.jfif'),
+    new Item(5, 'Medium Cleanser', 'Medium cistiace mlieko pre normalnu a suchu plet',
+      15.00, '/assets/eshop/kozmetika.jfif'),
+    new Item(6, 'Milky Cleanser', 'Hard cistiace mlieko pre normalnu a suchu plet',
+      20.00, '/assets/eshop/kozmetika.jfif'),
+  ];
+  listBasketItems: Array<BasketItem> = [
+    // new BasketItem(new Item(10, 'TRest', 'Jemne cistiace mlieko pre normalnu a suchu plet',
+    // 10.00, '/assets/eshop/kozmetika.jfif'), 1, 'streda:2021')
+  ];
   constructor() {
   }
 

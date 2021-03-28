@@ -1,11 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light bordered container d-inline-flex p-0 m-0
  col-12 justify-content-center" >
   <div class="container d-flex col-12">
-      <button class="navbar-toggler buttonBorder align-self-center col-12" type="button" data-toggle="collapse"
-              data-target="#navbarsExample10" aria-controls="#navbarsExample10" aria-expanded="false"
-              aria-label="Toggle navigation" (click)="collapse()">
-        <span class="navbar-toggler-icon col-12"></span>
-      </button>
+      <div class="col-4">
+        <button class="navbar-toggler border-0 align-self-center col-4" type="button" data-toggle="collapse"
+                data-target="#navbarsExample10" aria-controls="#navbarsExample10" aria-expanded="false"
+                aria-label="Toggle navigation" (click)="collapse()">
+          <span class="navbar-toggler-icon col-12"></span>
+        </button>
+<!--        emty span-->
+        <div class="col-8">
+        </div>
+      </div>
+
+
+<!--    actual button-->
+    <div class="nav-item text-center p-0 m-0 col-4 currentPage" id="secondHiddenElement">
+      <a class="nav-link text-center currentPage" id="currentSelectedTab">
+        <!--      {{ this.currentSelectedItem }}-->
+        {{this.parseUrl(router.url)}}
+      </a>
+    </div>
+<!--    basket place holder-->
+    <div class="nav-item text-center p-0 m-0 col-4 currentPage">
+<!--      <a class="nav-link text-center">-->
+        <app-basket-icon class="nav-link text-center currentPage" *ngIf="(router.url === '/basket' || router.url === '/eshop')"></app-basket-icon>
+<!--      </a>-->
+    </div>
+
   </div>
 
   <!--logo PART-->
@@ -17,34 +38,34 @@
   <div class="collapse navbar-collapse zlom justify-content-center col-8 p-0 m-0" id="navbarsExample10" >
     <ul class="navbar-nav justify-content-center w-100 col-12 pl-0 col-sm-12">
       <li class="nav-item justify-content-center ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Úvod')"  routerLink="/">Úvod</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  routerLink="/">Úvod</a>
       </li>
       <li class="nav-item  ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Eshop')"  routerLink="/eshop">Eshop</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/eshop">Eshop</a>
       </li>
       <li class="nav-item  ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('O nás')"  routerLink="/about-us">O nás</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"routerLink="/about-us">O nás</a>
       </li>
       <li class="nav-item  ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Služby')"   routerLink="/services">Služby</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/services">Služby</a>
       </li>
       <li class="nav-item ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Cenník')"   routerLink="/pricelist">Cenník</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  routerLink="/pricelist">Cenník</a>
       </li>
       <li class="nav-item ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Naša práca')"   routerLink="/work">Naša práca</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/work">Naša práca</a>
       </li>
       <li class="nav-item ml-2 mr-2">
-        <a class="nav-link text-center" data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Novinky')"   routerLink="/news">Novinky</a>
+        <a class="nav-link text-center" data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/news">Novinky</a>
       </li>
       <li class="nav-item ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="selectItem('Partneri')"   routerLink="/news">Partneri</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/news">Partneri</a>
       </li>
       <li class="nav-item text-center ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Termíny')"   routerLink="/calendar">Termíny</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/calendar">Termíny</a>
       </li>
       <li class="nav-item text-center ml-2 mr-2">
-        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show"  (click)="selectItem('Kontakt')" routerLink="/contact">Kontakt</a>
+        <a class="nav-link text-center"  data-toggle="collapse" data-target=".navbar-collapse.show" routerLink="/contact">Kontakt</a>
       </li>
     </ul>
   </div>
@@ -53,10 +74,7 @@
 <!--    <a></a>-->
 <!--  </div>-->
 
-  <div class="nav-item text-center p-0 m-0 col-xs-12 w-100 currentPage" id="secondHiddenElement">
-    <a class="nav-link text-center currentPage" id="currentSelectedTab"> {{ this.currentSelectedItem }}
-    </a>
-  </div>
+
 <!--  <div class="d-flex justify-content-center align-middle">-->
 <!--    <a class="p-2 fa fa-facebook" href="https://www.facebook.com/AllegriaSalon/?ref=page_internal"></a>-->
 <!--    <a class="p-2 fa fa-instagram" href="https://www.instagram.com"></a>-->

@@ -9,11 +9,11 @@ import {EshopService} from '../eshop.service';
   styleUrls: ['./item.component.scss']
 })
 export class ItemComponent implements OnInit {
-  @Input() insideShop: Item ;
+  @Input() insideShop: Item;
   @Output() toBasketItemEvent = new EventEmitter<Item>();
 
   constructor(private eshopService: EshopService) {
-    this.insideShop = new Item('', '', 0.0, '');
+     this.insideShop = new Item(100, '', '', 0.0, '');
   }
 
   ngOnInit(): void {

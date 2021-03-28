@@ -1,4 +1,5 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,11 +9,19 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 export class MenuComponent implements OnInit{
 
   private isMenuBarCollapsed: boolean;
-  public currentSelectedItem = '';
+  private menuKeySlovakValue: Map<string, string> = new Map<string, string>();
 
-  constructor() {
+  constructor(public router: Router) {
     this.isMenuBarCollapsed = true;
-    this.currentSelectedItem = 'Úvod';
+    this.menuKeySlovakValue.set('/eshop', 'Eshop');
+    this.menuKeySlovakValue.set('/basket', 'Košík');
+    this.menuKeySlovakValue.set('/about-us', 'O nás');
+    this.menuKeySlovakValue.set('/services', 'Služby');
+    this.menuKeySlovakValue.set('/pricelist', 'Cenník');
+    this.menuKeySlovakValue.set('/work', 'Naša práva');
+    this.menuKeySlovakValue.set('/news', 'Novinky');
+    this.menuKeySlovakValue.set('/calendar', 'Kalendár');
+    this.menuKeySlovakValue.set('/contact', 'Kontakt');
   }
 
   ngOnInit(): void {
@@ -20,15 +29,12 @@ export class MenuComponent implements OnInit{
 
   collapse(): void {
     this.isMenuBarCollapsed = !this.isMenuBarCollapsed;
-    if (this.isMenuBarCollapsed) {
-      // this.currentSelectedItem = 'Úvod';
-    } else {
-      // this.currentSelectedItem = '';
-    }
   }
 
-  selectItem(item: string): void {
-    this.currentSelectedItem = item;
+  parseUrl(routerUrl: string): string {
+    // find in map
+    const ret: string = this.menuKeySlovakValue.get(routerUrl) || '';
+    return ret === 'undefined' ? 'Úvod' : ret;
   }
 
 

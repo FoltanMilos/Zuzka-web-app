@@ -10,6 +10,7 @@ import {EshopService} from '../eshop.service';
 })
 export class ListItemComponent implements OnInit {
   @Input() listShopItems: Array<Item> = [];
+  @Input() listShopItems2: Array<Item> = [];
 
   constructor(private eshopService: EshopService) { }
 

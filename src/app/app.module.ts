@@ -14,7 +14,6 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
 import { NewsComponent } from './pages/news/news.component';
 import {HttpClientModule} from '@angular/common/http';
 import { PriceItemComponent } from './pages/pricelist/price-item/price-item.component';
-import { ProductlistComponent } from './pages/productlist/productlist.component';
 import {MatIconModule} from '@angular/material/icon';
 import {NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
 import { ServicesComponent } from './pages/services/services.component';
@@ -33,10 +32,15 @@ import { BasketPayBottomComponent } from './pages/eshop/basket/basket-pay-bottom
 import { BasketDeliveryComponent } from './pages/eshop/basket/basket-delivery/basket-delivery.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
 import { BasketPersonalInfoComponent } from './pages/eshop/basket/basket-personal-info/basket-personal-info.component';
 import { BasketFinaliseOrderComponent } from './pages/eshop/basket/basket-finalise-order/basket-finalise-order.component';
 import { BasketItemSmallInfoComponent } from './pages/eshop/basket/basket-item/basket-item-small-info/basket-item-small-info.component';
+import { BasketIconComponent } from './pages/eshop/basket/basket-icon/basket-icon.component';
+import { EshopTreeListComponent } from './pages/eshop/eshop-sales/eshop-tree-list/eshop-tree-list.component';
+import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -51,7 +55,6 @@ import { BasketItemSmallInfoComponent } from './pages/eshop/basket/basket-item/b
     CalendarComponent,
     NewsComponent,
     PriceItemComponent,
-    ProductlistComponent,
     ServicesComponent,
     AboutUsComponent,
     MenuBottomComponent,
@@ -67,7 +70,9 @@ import { BasketItemSmallInfoComponent } from './pages/eshop/basket/basket-item/b
     BasketDeliveryComponent,
     BasketPersonalInfoComponent,
     BasketFinaliseOrderComponent,
-    BasketItemSmallInfoComponent
+    BasketItemSmallInfoComponent,
+    BasketIconComponent,
+    EshopTreeListComponent
   ],
   imports: [
     BrowserModule,
@@ -77,7 +82,10 @@ import { BasketItemSmallInfoComponent } from './pages/eshop/basket/basket-item/b
     NgbCollapseModule,
     MatRadioModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    CdkTreeModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule
   ],
   providers: [EshopService],
   bootstrap: [AppComponent, MenuComponent
