@@ -1,0 +1,66 @@
+<!--<body>-->
+
+<!--  <form (submit)="$event.preventDefault()">-->
+<!--    <mat-form-field>-->
+<!--      <mat-label>First name</mat-label>-->
+<!--      <input matInput (cdkAutofill)="firstNameAutofilled = $event.isAutofilled">-->
+<!--      <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>-->
+<!--    </mat-form-field>-->
+<!--    <mat-form-field>-->
+<!--      <mat-label>Last name</mat-label>-->
+<!--      <input matInput (cdkAutofill)="lastNameAutofilled = $event.isAutofilled">-->
+<!--      <mat-hint *ngIf="lastNameAutofilled">Autofilled!</mat-hint>-->
+<!--    </mat-form-field>-->
+<!--    <button mat-raised-button>Submit</button>-->
+<!--  </form>-->
+
+
+<!--casual form-->
+  <form class="col-12 d-flex container-fluid flex-wrap justify-content-center mb-3">
+
+    <div class="col-12">
+      <h5>Fakturacne udaje</h5>
+    </div>
+
+    <div class="col-12">
+      <label for="menoApriezvisko">Meno a priezvisko</label>
+      <input type="text" class="form-control" id="menoApriezvisko" name="name">
+    </div>
+
+    <div class="col-12">
+      <label for="ulica">Ulica</label>
+      <input type="text" class="form-control" id="ulica" name="name">
+    </div>
+
+    <div class="col-12">
+      <label for="mesto">Mesto</label>
+      <input type="text" class="form-control" id="mesto" name="name">
+    </div>
+
+    <div class="col-12">
+      <label for="psc">PSC</label>
+      <input type="text" class="form-control" id="psc" name="name">
+    </div>
+
+    <div class="col-12">
+      <label for="telephone">Telefonne cislo</label>
+      <div class="col-12 container d-flex p-0 m-0 justify-content-between">
+        <select class="form-control" id="telephonePrefix" required>
+          <option *ngFor="let number of telephonePrefix" [value]="number"> {{number}}</option>
+        </select>
+        <input type="text" class="form-control col-8" id="telephone" name="name">
+      </div>
+    </div>
+
+    <div class="col-12">
+      <label for="poznamka">Poznamka</label>
+      <input type="text" class="form-control" id="poznamka" name="name">
+    </div>
+
+    <div class="col-12 mt-2">
+      <a class="text-center">Informacie o spracovavani osobnych udajov</a>
+    </div>
+
+  </form>
+
+<!--</body>-->
