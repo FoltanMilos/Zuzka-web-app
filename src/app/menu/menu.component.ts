@@ -1,5 +1,6 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
+import {EshopService} from '../pages/eshop/eshop.service';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +12,7 @@ export class MenuComponent implements OnInit{
   private isMenuBarCollapsed: boolean;
   private menuKeySlovakValue: Map<string, string> = new Map<string, string>();
 
-  constructor(public router: Router) {
+  constructor(public router: Router,private eshopService: EshopService) {
     this.isMenuBarCollapsed = true;
     this.menuKeySlovakValue.set('/eshop', 'Eshop');
     this.menuKeySlovakValue.set('/basket', 'Košík');

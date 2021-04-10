@@ -5,17 +5,17 @@
       <img src="assets/eshop/kozmetika.jfif" class="img-fluid img-item center">
     </div>
     <div class=" col-6 container d-flex flex-wrap justify-content-center">
-      <h6 class="m-0 mt-1 text-center">Nazov produktu</h6>
-      <h6 class="m-0">20.00 €</h6>
-      <div class="mt-2 text-center align-content-center">Dodanie do neviem kedy</div>
+      <h6 class="m-0 mt-1 text-center"> {{ basketItem.item?.name }}</h6>
+      <h6 class="m-0">{{ basketItem.item.getPrice() | number : '.2' }} €</h6>
+      <div class="mt-2 text-center align-content-center">Dodanie: {{ basketItem.deliveryDate}}</div>
     </div>
   </div>
 
 <!--  tu bude popis-->
   <div class="col-12 mb-1">
-    <div class="border-bottom col-12 text-center align-self-center">Popis cislo jedna</div>
-    <div class="border-bottom col-12 text-center align-self-center">Popis cislo dva</div>
-    <div class="col-12 text-center align-self-center">Popis cislo tri</div>
+    <div class="border-bottom col-12 text-center align-self-center"> {{ basketItem?.item?.description}}</div>
+    <div class="border-bottom col-12 text-center align-self-center">{{ basketItem?.item?.description}}</div>
+<!--    <div class="col-12 text-center align-self-center">Popis cislo tri</div>-->
   </div>
 
 
@@ -23,17 +23,17 @@
   <div class="container d-flex col-12 darkBg">
     <div class="col-6 d-flex container mt-2 mb-2 ">
       <div class="col-6 pl-0 justify-content-start">
-        <input class="pl-0 w-100" value="1">
+        <input class="pl-0 w-100" [value]="basketItem.quantity">
       </div>
       <div class="col-6 container d-flex">
-        <button class="col-1">+</button>
-        <button class="col-1">-</button>
+        <button class="col-1" (click)="addQuantity(1)">+</button>
+        <button class="col-1" (click)="addQuantity(-1)" [disabled]="lowerButtonDisabled()">-</button>
       </div>
     </div>
     <div class="container col-6  mt-2 mb-2">
-      <div class="align-content-end float-right">20.00 eur</div>
+      <div class="align-content-end float-right">{{ this.summaryPerQuantity() | number : '.2' }}€</div>
     </div>
   </div>
 
-</div>
+</div>app-basket-item
 

@@ -23,8 +23,8 @@ export class EshopService {
       20.00, '/assets/eshop/kozmetika.jfif'),
   ];
   listBasketItems: Array<BasketItem> = [
-    // new BasketItem(new Item(10, 'TRest', 'Jemne cistiace mlieko pre normalnu a suchu plet',
-    // 10.00, '/assets/eshop/kozmetika.jfif'), 1, 'streda:2021')
+    new BasketItem(new Item(1, 'Milky Cleanser', 'Jemne cistiace mlieko pre normalnu a suchu plet',
+      10.00, '/assets/eshop/kozmetika.jfif'), 1, 'zajtra')
   ];
   constructor() {
   }
@@ -35,5 +35,17 @@ export class EshopService {
     this.listBasketItems.push(object);
     console.log(this.listBasketItems.length);
     console.log(object);
+  }
+
+  public sumBasket(): number {
+    let sums = 0.00;
+    this.listBasketItems.forEach(value => {
+      if (value !== undefined ) {
+        console.log('item ' + value?.item?.price);
+        sums += value?.item?.price * value?.quantity;
+        console.log('final ' + sums);
+      }
+    });
+    return sums;
   }
 }

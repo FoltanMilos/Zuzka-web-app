@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EshopService} from '../../eshop.service';
 
 @Component({
   selector: 'app-basket-icon',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasketIconComponent implements OnInit {
 
-  constructor() { }
+  constructor(private eshopService: EshopService) { }
 
   ngOnInit(): void {
+  }
+
+  public sumBasket(): number {
+    const mm = this.eshopService.sumBasket();
+    console.log('Ret: ' + mm);
+    return mm;
   }
 
 }

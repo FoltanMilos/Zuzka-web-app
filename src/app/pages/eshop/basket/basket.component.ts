@@ -10,6 +10,7 @@ import {EshopService} from '../eshop.service';
 export class BasketComponent implements OnInit {
   @Input() listBasketItems: Array<BasketItem> = [];
   level = 1;
+  maxLevel = 1;
 
   constructor(private eshopService: EshopService) {
   }
@@ -19,7 +20,20 @@ export class BasketComponent implements OnInit {
   }
 
   setLever(parameter: number): void {
-    this.level = parameter;
+    if (this.level < parameter) {
+      // toto je ok, mozeme sa posunut ak je o 1
+      if (this.level + 1 === parameter) {
+        this.level += 1;
+        this.maxLevel += 1;
+      }
+      // else nic
+    } else {
+      // ak je mensie, tak s avracia naspat
+      this.level = parameter;
+      // do not downgrade max, its ok
+    }
+    console.log('LEVEL: ' + this.level);
+    console.log('MAX-LEVEL: ' + this.maxLevel);
   }
 
 }

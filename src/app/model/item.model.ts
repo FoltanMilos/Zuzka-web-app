@@ -1,9 +1,9 @@
 export class Item {
-  public id: number | undefined;
-  public name: string | undefined;
-  public description: string | undefined;
-  public price: number | undefined;
-  public imgPath: string | undefined;
+  public id: number;
+  public name: string;
+  public description: string;
+  public price: number;
+  public imgPath: string;
 
   constructor(id: number, name: string, description: string, price: number, imgPath: string) {
     this.id = id;
@@ -11,5 +11,9 @@ export class Item {
     this.price = price;
     this.description = description;
     this.imgPath = imgPath;
+  }
+
+  public getPrice(): number {
+    return this.price;
   }
 }
