@@ -1,4 +1,4 @@
-<div class="col-12 container-fluid d-flex flex-wrap mb-3" id="htmlData">
+<div class="col-12 container-fluid d-flex flex-wrap mb-3" id="htmlData" #htmlData>
 
   <div class="col-12 container-fluid d-flex m-0 p-0">
     <!--  obrazok-->
@@ -33,3 +33,19 @@
 <!--  -->
   <button (click)="openPdf()">Odoslat s povinnostou platby</button>
 </div>
+
+
+<div id="pdf" #pdf [hidden]="true">
+  <table>
+    <tr>
+      <th style="width:auto">FAKTURA</th>
+    </tr>
+    <tr>
+      <th style="width:auto;border: 1px solid black;">Cislo faktury</th>
+    </tr>
+    <tr>
+      <td style="text-align:center" height="50">Cell A1</td>
+    </tr>
+  </table>
+</div>
+
