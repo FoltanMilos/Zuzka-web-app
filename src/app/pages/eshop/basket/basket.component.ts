@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import {BasketItem} from '../../../model/basketItem.model';
 import {EshopService} from '../eshop.service';
 
@@ -11,6 +11,7 @@ export class BasketComponent implements OnInit {
   @Input() listBasketItems: Array<BasketItem> = [];
   level = 1;
   maxLevel = 1;
+
 
   constructor(private eshopService: EshopService) {
   }
