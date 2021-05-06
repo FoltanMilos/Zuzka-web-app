@@ -15,7 +15,7 @@ export class BasketIconComponent implements OnInit {
 
   public sumBasket(): number {
     const mm = this.eshopService.sumBasket();
-    console.log('Ret: ' + mm);
+    // console.log('Ret: ' + mm);
     return mm;
   }
 
